@@ -1,0 +1,12 @@
+// Fullname: BAHENDA Bruno
+// Reg No: 26886/2024
+
+void main() {
+  int x = 86; // Changed D to 86
+  int y = 6; // Changed T to 6
+  var z = x * 2 + y ~/ 4;
+  z += x;
+  print(z); //259
+  print(z.isEven); // false
+  print('$z' + '$x'); // 25986
+}
