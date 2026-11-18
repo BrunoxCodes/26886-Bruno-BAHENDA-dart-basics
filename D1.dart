@@ -13,7 +13,11 @@ void doubleIt(int value) {
 
 int addVat(int price, {int rate = 18}) => price + price * rate ~/ 100;
 void main() {
+  const String regNo = '26886';
+  final int d = int.parse(regNo.substring(regNo.length - 2));
+  final int t = int.parse(regNo[regNo.length - 1]);
   bump();
+  print("Reg no: ${regNo} | D = ${d} | T = ${t}");
   print(count);
   int v = 5;
   doubleIt(v);

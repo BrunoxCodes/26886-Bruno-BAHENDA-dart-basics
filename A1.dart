@@ -1,6 +1,10 @@
 void main() {
+const String regNo = '26886';
+final int d = int.parse(regNo.substring(regNo.length - 2));
+final int t = int.parse(regNo[regNo.length - 1]);
 int a = 17;
 int b = 5;
+print("Reg no: ${regNo} | D = ${d} | T = ${t}");
 print(a / b); // 3.4
 print(a ~/ b); // 3
 print(a % b); // 2

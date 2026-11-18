@@ -118,9 +118,13 @@ int buyAirtime(int balance, int amount) {
 // by BB
 void main() {
   // by BB
-  int D = 1; // Replace with your assigned D
-  int T = 7; // Replace with your assigned T
+const String regNo = '26886';
+final int d = int.parse(regNo.substring(regNo.length - 2));
+final int t = int.parse(regNo[regNo.length - 1]);
+  int D = 86;
+  int T = 6;
 
+print("Reg no: ${regNo} | D = ${d} | T = ${t}");
   print('PIN validation:');
   print(isValidPin('12345'));
   print(isValidPin('77777'));

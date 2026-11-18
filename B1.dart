@@ -2,7 +2,11 @@
 // Reg No: 26886/2024
 
 void main() {
+const String regNo = '26886';
+final int d = int.parse(regNo.substring(regNo.length - 2));
+final int t = int.parse(regNo[regNo.length - 1]);
   String city = 'Kigali';
+print("Reg no: ${regNo} | D = ${d} | T = ${t}");
   print(city.length); // 6
   print(city[city.length - 1]); // i
   print(city.substring(2, 4)); // ga

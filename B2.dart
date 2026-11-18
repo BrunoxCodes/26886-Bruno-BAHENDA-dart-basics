@@ -13,7 +13,11 @@ int countVowels(String text) {
 }
 
 void main() {
+  const String regNo = '26886';
+  final int d = int.parse(regNo.substring(regNo.length - 2));
+  final int t = int.parse(regNo[regNo.length - 1]);
   String fullName = "Bahenda Bruno";
   int vowels = countVowels(fullName);
+  print("Reg no: ${regNo} | D = ${d} | T = ${t}");
   print("$fullName has $vowels vowels");
 }

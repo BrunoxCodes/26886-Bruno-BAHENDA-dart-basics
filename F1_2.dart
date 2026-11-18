@@ -1,5 +1,10 @@
 bool isValidPin(String pin) {
   // by BB
+  const String regNo = '26886';
+  final int d = int.parse(regNo.substring(regNo.length - 2));
+  final int t = int.parse(regNo[regNo.length - 1]);
+  print("Reg no: ${regNo} | D = ${d} | T = ${t}");
+
   if (pin.length != 5 || pin == '12345') {
     return false;
   }

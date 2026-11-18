@@ -36,6 +36,9 @@ String maskPhone(String phone) {
 }
 
 void main() {
+  const String regNo = '26886';
+  final int d = int.parse(regNo.substring(regNo.length - 2));
+  final int t = int.parse(regNo[regNo.length - 1]);
   // by BB
   int D = 86;
   int T = 6;
@@ -44,6 +47,7 @@ void main() {
   int totalFees = 0;
   int i = 1;
 
+  print("Reg no: ${regNo} | D = ${d} | T = ${t}");
   while (i <= D + 3) {
     int amount = i * 4000 + T * 100;
     int fee = momoFee(amount);

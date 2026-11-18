@@ -13,8 +13,12 @@ void drawTriangle(int height) {
 }
 
 void main() {
+  const String regNo = '26886';
+  final int d = int.parse(regNo.substring(regNo.length - 2));
+  final int t = int.parse(regNo[regNo.length - 1]);
   int D = 86;
 
+  print("Reg no: ${regNo} | D = ${d} | T = ${t}");
   drawTriangle(D + 3);
 
   drawTriangle(0);
